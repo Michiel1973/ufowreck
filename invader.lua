@@ -1,6 +1,5 @@
 mobs:spawn({name = "ufowreck:floob",
        nodes = {"ufowreck:floob_spawner"},
---       min_light = 10,
        min_height = 0,
        active_object_count = 1,
        chance = 1,
@@ -20,7 +19,6 @@ mobs:register_mob("ufowreck:floob", {
 	hp_min = 12,
 	hp_max = 35,
 	armor = 100,
-    --reach = 1.5,
 	collisionbox = {-0.5, -0.01, -0.5, 0.5, 2.2, 0.5},
     rotate = 180,
 	visual = "mesh",
@@ -54,7 +52,6 @@ mobs:register_mob("ufowreck:floob", {
 		stand_start = 40,		stand_end = 80,
 		walk_start = 0,		walk_end = 40,
 		run_start = 0,		run_end = 40,
---		punch_start = 168,		punch_end = 188,
 	},
 })
 

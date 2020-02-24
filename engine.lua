@@ -80,6 +80,8 @@ minetest.register_node("ufowreck:alien_health_charger2", {
 	end,
 	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
 		if player:get_hp() < 20 then
+			minetest.sound_play("beep")
+			stamina.change(player, 20)
 			player:set_hp(player:get_hp() + 10)
 			node.name = "ufowreck:alien_health_charger0"
 			minetest.set_node(pos,node)
@@ -119,6 +121,8 @@ minetest.register_node("ufowreck:alien_health_charger4", {
 	end,
 	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
 		if player:get_hp() < 20 then
+			minetest.sound_play("beep")
+			stamina.change(player, 20)
 			player:set_hp(player:get_hp() + 10)
 			node.name = "ufowreck:alien_health_charger2"
 			minetest.set_node(pos,node)
@@ -158,6 +162,8 @@ minetest.register_node("ufowreck:alien_health_charger6", {
 	end,
 	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
 		if player:get_hp() < 20 then
+			minetest.sound_play("beep")
+			stamina.change(player, 20)
 			player:set_hp(player:get_hp() + 10)
 			node.name = "ufowreck:alien_health_charger4"
 			minetest.set_node(pos,node)
@@ -196,6 +202,8 @@ minetest.register_node("ufowreck:alien_health_charger8", {
 	end,
 	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
 		if player:get_hp() < 20 then
+			minetest.sound_play("beep")
+			stamina.change(player, 20)
 			player:set_hp(player:get_hp() + 10)
 			node.name = "ufowreck:alien_health_charger6"
 			minetest.set_node(pos,node)

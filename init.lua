@@ -98,6 +98,7 @@ end
 
 local S = {
   name = "ufowreck:floob_spawner",
+  force_place = true,
 }
 
 -- make schematic
@@ -125,7 +126,7 @@ ufowreck_schematic = {
 --4
     _, M, M, M1, M, M, M1, M, M, _,
     M, M, M, L, L, M, _, _, _, M,
-    M, M, M, L, L, M, _, _, _, G,
+    S, M, M, L, L, M, _, _, _, G,
     _, M, M, L, L, M, _, _, M, _,
     _, _, M, M1, M, M, M1, M1, _, _,
 --5
