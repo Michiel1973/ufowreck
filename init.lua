@@ -5,10 +5,18 @@ dofile(modpath.."/invader.lua")
 dofile(modpath.."/engine.lua")
 dofile(modpath.."/tools.lua")
 dofile(modpath.."/miniufo.lua")
+dofile(modpath.."/lighter.lua")
+dofile(modpath.."/base.lua")
 
 local _ = {
   name = "air",
   prob = 0,
+}
+
+local A = {
+  name = "air",
+  prob = 0,
+  force_place = true,
 }
 
 local M = {
@@ -345,4 +353,3 @@ minetest.register_decoration({
   y_max = 31000,
   flags = {place_center_z = true, place_center_x = true},
 })
-

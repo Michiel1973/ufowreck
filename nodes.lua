@@ -324,7 +324,11 @@ minetest.register_node("ufowreck:alien_door_opened", {
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
-	drop = closed,
+	drop = {
+		items = {
+			{items = {'ufowreck:alien_door_closed'}},
+		}
+	},
 	groups = {cracky = 1},
 	node_box = {
 		type = "fixed",
@@ -634,7 +638,7 @@ minetest.register_node("ufowreck:glow_plant", {
 		}
 	},
 	is_ground_content = false,
-	light_source = 15,
+	light_source = 14,
 })
 
 minetest.register_node("ufowreck:pad", {
